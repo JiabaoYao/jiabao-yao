@@ -747,7 +747,8 @@
           <section class="contact-form">
             <h3 class="h3 form-title">Contact Form</h3>
 
-            <form action="#" class="form" data-form>
+            <!-- <form action="#" class="form" data-form> -->
+            <form action="https://formspree.io/f/xldbzoqn" method="POST" data-form>
               <div class="input-wrapper">
                 <input
                   type="text"
@@ -757,7 +758,6 @@
                   required
                   data-form-input
                 />
-
                 <input
                   type="email"
                   name="email"
@@ -767,7 +767,7 @@
                   data-form-input
                 />
               </div>
-
+            
               <textarea
                 name="message"
                 class="form-input"
@@ -775,12 +775,25 @@
                 required
                 data-form-input
               ></textarea>
-
+            
               <button class="form-btn" type="submit" disabled data-form-btn>
                 <ion-icon name="paper-plane"></ion-icon>
                 <span>Send Message</span>
               </button>
             </form>
+            <!-- modify this form HTML and place wherever you want your form -->
+            <!-- <form action="https://formspree.io/f/xldbzoqn" method="POST">
+              <label>
+                Your email:
+                <input type="email" name="email" />
+              </label>
+              <label>
+                Your message:
+                <textarea name="message"></textarea>
+              </label>
+              <!-- your other form fields go here -->
+              <button type="submit">Send</button>
+            </form> -->
           </section>
         </article>
       </div>
