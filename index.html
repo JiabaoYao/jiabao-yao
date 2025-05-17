@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vCard - Personal Portfolio</title>
+
+    <!--
+- favicon
+-->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/my_logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+- custom css link
+-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+- google font link
+-->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+  - #MAIN
+-->
+
+    <main>
+      <!--
+- #SIDEBAR
+-->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-photo.png"
+              alt="Jiabao Yao"
+              width="60"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Jiabao Yao">Jiabao Yao</h1>
+
+            <p class="title">Full-Stack Engineer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:yaogaga520@gmail.com" class="contact-link"
+                  >yaogaga520@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+19342464430" class="contact-link"
+                  >+1 (934) 246-4430</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Buffalo, New York, USA</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/jiabao-yao-46287a287/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.facebook.com/profile.php?id=61555923942080"
+                class="social-link"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/yaogaga520/"
+                class="social-link"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+- #main-content
+-->
+
+      <div class="main-content">
+        <!--
+  - #NAVBAR
+-->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button
+                class="navbar-link active"
+                data-nav-link
+                data-page="about"
+              >
+                About
+              </button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link data-page="resume">
+                Resume
+              </button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link data-page="portfolio">
+                Portfolio
+              </button>
+            </li>
+
+            <!-- <li class="navbar-item">
+              <button class="navbar-link" data-nav-link data-page="blog">
+                Blog
+              </button>
+            </li> -->
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link data-page="contact">
+                Contact
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+  - #ABOUT
+-->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I'm a Software Engineer with over 3 years of experience in C/C++
+              and Python, specializing in fault detection, data analysis, and
+              performance optimization. I have a strong track record of
+              developing scalable, high-performance systems in Agile
+              environments, and I enjoy turning complex technical problems into
+              clean, maintainable solutions.
+            </p>
+
+            <p>
+              Currently pursuing a specialization in Artificial Intelligence,
+              I’ve completed advanced coursework in Machine Learning, Deep
+              Learning, Data-Intensive Computing, Data Quality Management, and
+              Pattern Recognition. These skills complement my engineering
+              background and enable me to design intelligent systems that learn
+              from data, support automation, and drive innovation across
+              software applications.
+            </p>
+          </section>
+
+          <!--
+    - service
+  -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/web_dep_icon.png"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web Development</h4>
+
+                  <p class="service-item-text">
+                    Professional and modern design and development of the
+                    highest quality.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/software_dep_icon.png"
+                    alt="Software development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Software development</h4>
+
+                  <p class="service-item-text">
+                    Professional design and development of architectures,
+                    algorithms, and detection mechanisms.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/machine_learning_icon.png"
+                    alt="machine learning icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">ML-Powered Pricing Tool</h4>
+
+                  <p class="service-item-text">
+                    High-quality price estimation using machine learning.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/pattern_recog_icon.png"
+                    alt="pattern recognition icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Pattern Recognition</h4>
+
+                  <p class="service-item-text">
+                    Sign Language Recognition at the Word Level Using WLASL.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+  - #RESUME
+-->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">University at Buffalo</h4>
+
+                <span>2024 — 2026</span>
+
+                <p class="timeline-text">
+                  Master of Science in Computer Science (AI)
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Southeast University</h4>
+
+                <span>2018 — 2021</span>
+
+                <p class="timeline-text">
+                  Master of Engineering in Mechanical Engineering
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Hainan University</h4>
+
+                <span>2014 — 2018</span>
+
+                <p class="timeline-text">
+                  Bachelor of Engineering in Mechanical Engineering
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Movie Database Development
+                </h4>
+
+                <span>2025 — 2025</span>
+
+                <p class="timeline-text">
+                  • Built a relational database from IMDb Non-Commercial
+                  Datasets using PostgreSQL and deployed it on Supabase to
+                  support essential querying and management operations.
+                </p>
+                <p class="timeline-text">
+                  • Developed an efficient tool to assist film production and
+                  streamline information access for industry professionals, film
+                  enthusiasts, data analysts, and researchers.
+                </p>
+                <p class="timeline-text">
+                  • Delivered a Power BI–based overview with interactive visual
+                  analysis and insights from the database.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Used Car Price Prediction Platform Development
+                </h4>
+
+                <span>2024 — 2024</span>
+
+                <p class="timeline-text">
+                  • Created a used car price prediction platform using various
+                  machine learning models (e.g., Gradient Boosting, XGBoost,
+                  LSTM, Random Forest, CatBoost, Gaussian Mixture Model).
+                </p>
+                <p class="timeline-text">
+                  • Scraped and cleaned data from CarMax.com to maintain an
+                  updated and comprehensive dataset.
+                </p>
+                <p class="timeline-text">
+                  • Performed Exploratory Data Analysis (EDA) to uncover key
+                  patterns and correlations for data-driven insights.
+                </p>
+                <p class="timeline-text">
+                  • Designed and deployed a scalable MySQL database on AWS RDS
+                  to support team collaboration.
+                </p>
+                <p class="timeline-text">
+                  • Developed a Streamlit-based frontend for CRUD operations,
+                  improving data accessibility and management.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Software Development Engineer — Huawei Technologies Co., Ltd
+                </h4>
+
+                <span>2021 — 2024</span>
+
+                <p class="timeline-text">
+                  • Enhanced fault detection accuracy by 25% through optimized
+                  C/C++ modules and advanced logging mechanisms.
+                </p>
+                <p class="timeline-text">
+                  • Automated data export processes with Python, reducing manual
+                  effort by 30% and streamlining testing.
+                </p>
+                <p class="timeline-text">
+                  • Collaborated with cross-functional teams to design and
+                  deploy robust fault detection solutions, ensuring high system
+                  reliability and performance.
+                </p>
+                <p class="timeline-text">
+                  • Utilized Git, Shell Scripting, and Agile practices for
+                  streamlined development cycles.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Research Assistant — Southeast University
+                </h4>
+
+                <span>2018 — 2021</span>
+
+                <p class="timeline-text">
+                  • Conducted research on anisotropic wet etching for
+                  GaN/sapphire microstructures; leveraged MATLAB for numerical
+                  analysis and crystal corrosion simulations.
+                </p>
+                <p class="timeline-text">
+                  • Implemented sparse field and octree algorithms, improving
+                  simulation speed and reducing memory usage in wet etching
+                  prediction models.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">
+                    Programming: C/C++, Python, SQL, MATLAB, React
+                  </h5>
+                  <data value="80">85%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">
+                    Software Dev: OOP, Data Structures, Algorithms, Unit &
+                    Integration Testing
+                  </h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">
+                    Machine Learning: Scikit-learn, PyTorch, Pandas, NumPy
+                  </h5>
+                  <data value="90">85%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">
+                    Dev Tools: Git, Linux, Docker, CI/CD, Streamlit, Spark
+                  </h5>
+                  <data value="50">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+  - #PORTFOLIO
+-->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Machine Learning & AI</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web & Backend Development</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Data Analytics & Visualization</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Machine Learning & AI</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web & Backend Development</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>
+                    Data Analytics & Visualization
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="machine learning & ai"
+              >
+                <a
+                  href="https://github.com/montage0921/CSE587-Project-UsedCarPricePrediction/tree/master"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/used_car_code.png"
+                      alt="price_pred"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    Used Car Price Prediction (Model)
+                  </h3>
+
+                  <p class="project-category">Machine Learning & AI</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="machine learning & ai"
+              >
+                <a
+                  href="https://github.com/JiabaoYao/Sign-Language-Recognition"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/openpose.jpg"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Sign Language Recognition (AI)</h3>
+
+                  <p class="project-category">Machine Learning & AI</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web & backend development"
+              >
+                <a
+                  href="https://supabase.com/dashboard/project/rnxnnqsyjcircloxrryq/database/schemas"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/supabase.png"
+                      alt="database"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    Movie Database (PostgreSQL + Supabase)
+                  </h3>
+
+                  <p class="project-category">Web & Backend Development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web & backend development"
+              >
+                <a
+                  href="https://cse587-project-usedcarpriceprediction.onrender.com"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/used_car_pred.png"
+                      alt="price_pred"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    Used Car Price Prediction Platform (Web)
+                  </h3>
+
+                  <p class="project-category">Web & Backend Development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="data analytics & visualization"
+              >
+                <a
+                  href="https://app.powerbi.com/view?r=eyJrIjoiMTBkZjg1NmMtNDVhNy00YTFkLTk4NTctMzRmNTdhZWRhYmYzIiwidCI6Ijk2NDY0YThhLWY4ZWQtNDBiMS05OWUyLTVmNmI1MGEyMDI1MCIsImMiOjN9"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/database.png"
+                      alt="Power-BI"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Power BI: IMDb Insights</h3>
+
+                  <p class="project-category">Data Analytics & Visualization</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+  - #CONTACT
+  -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917.882385837854!2d-78.79209882381404!3d43.00181107114057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d373d2261b049f%3A0x2868694d4fc4f56f!2sUniversity%20at%20Buffalo!5e0!3m2!1sen!2sus!4v1747452470985!5m2!1sen!2sus"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+- custom js link
+-->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+- ionicon link
+-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
